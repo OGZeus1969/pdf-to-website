@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="row">
@@ -22,7 +21,6 @@
         </div>
     </section>
 
-    <!-- Options Section -->
     <section class="py-5">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">Two Premium Options for Property Owners</h2>
@@ -43,7 +41,6 @@
         </div>
     </section>
 
-    <!-- Solar Farm Stats -->
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">Solar Farm Potential: Exceptional Returns</h2>
@@ -73,7 +70,6 @@
         </div>
     </section>
 
-    <!-- Data Center Section -->
     <section class="py-5">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">Data Center Opportunity: Premium Revenue</h2>
@@ -85,7 +81,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about-section">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">About Blue Sky Land Ventures</h2>
@@ -106,7 +101,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container text-center">
             <h2 class="mb-4" data-aos="fade-up">Ready to Unlock Your Property's Potential?</h2>
@@ -128,73 +122,3 @@
     </script>
 </body>
 </html>
-```
-
-And the styles should be moved to an external CSS file named `style.css`:
-
-```css
-:root {
-    --primary-color: #0066cc;
-    --secondary-color: #00aa55;
-    --dark-color: #333;
-    --light-color: #f8f9fa;
-}
-
-body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-}
-
-.hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.feature-card {
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 1rem 0;
-    transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-}
-
-.stat-card {
-    text-align: center;
-    padding: 2rem;
-    background: var(--light-color);
-    border-radius: 10px;
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.cta-section {
-    background: var(--dark-color);
-    color: white;
-    padding: 80px 0;
-}
-
-.about-section {
-    padding: 80px 0;
-    background: var(--light-color);
-}
-
-.btn-primary {
-    background: var(--primary-color);
-    border: none;
-    padding: 12px 30px;
-    font-weight: 600;
-}
-
-.btn-primary:hover {
-    background: var(--secondary-color);
-}
