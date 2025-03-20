@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .preview-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4">PDF Preview</h1>
+        
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-3">Extracted Images</h2>
+                {% for image in images %}
+                <img src="{{ image }}" alt="Extracted image" class="preview-image">
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2 class="mb-3">Extracted Text</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="mb-0">{{ text }}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <a href="/" class="btn btn-primary">Upload Another PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
