@@ -65,6 +65,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: var(--dark-color);
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
 .feature-card:hover {
     transform: translateY(-5px);
 }
@@ -99,6 +111,16 @@ body {
 .about-section {
     padding: 80px 0;
     background: var(--light-color);
+}
+
+.company-logo {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
 }
 
 .btn-primary {
